@@ -8,14 +8,13 @@ const App = () => {
     <Router>
       <Header />
       <Switch>
-        <Route path="/reservation"></Route> <h2>Reservation</h2>
-        <Route />
-        {/*         <Reservation />
-         */}{' '}
-        <Route path="/">
-          <h2>Home</h2>
+        <Route path="/reservation" exact>
+          <Reservation />
         </Route>
-        {/*    <Home /> */}
+
+        <Route path="/" exact>
+          <Home />
+        </Route>
       </Switch>
       <Footer />
     </Router>
